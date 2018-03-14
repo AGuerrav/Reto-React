@@ -2,26 +2,28 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { requestDog } from './../actions';
 import { requestDogSuccess } from './../actions';
-import { requestDogaError } from './../actions';
-import Dog from './../components/Dog';
+import { requestDogError } from './../actions';
+import DogyList from './../components/DogList';
 
 class Container extends Component {
-  handleSelectionDog = (city) => {
-    this.props.setCity(city);
+  handleSelectionDog = (dogy) => {
+    this.props.requestDogSuccess(dogy);
+    this.props.requestDog(dogy);
+    this.props.requestDogError(dogy);
   }
-
   render() {
     return (
-      <Dog
-        cities = { this.props.cities }
-        onSelectedLocation = { this.handleSelectionLocation}>
-      </Dog>
+      <DogyList
+        onSelectedDogy = { this.handleSelectionDog}>
+      </DogyList>
     );
   }
 }
 // esta función nos deja trabajar con las acciones
 const mapDispacthToPropsActions = (dispatch) => ({
-  requestDog: value => dispatch(requestDogSuccess(value))
+  requestDog: value => dispatch(requestDog(value)),
+  requestDogSuccess: data => dispatch(requestDogSuccess(data)),
+  requestDogError: value => dispatch(requestDogError(value))
 });
 
 // connect toma lo que estan haciendo las dos funcionesy lo lleva a app

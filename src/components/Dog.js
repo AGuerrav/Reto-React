@@ -4,6 +4,14 @@ import PropTypes from 'prop-types';
 // Component
 
 class Dog extends Component {
+  constructor({dogy}) {
+    super();
+    this.state = {
+      dogy,
+      data: null
+    };
+    console.log('constructor');
+  }
   componentWillMount() {
     fetch('https://dog.ceo/api/breeds/image/random')
       .then(data => {
@@ -14,10 +22,10 @@ class Dog extends Component {
       });
   }
   render= () => {
-    const { onDogPhoto } = this.props;
+    const { onDogClick } = this.props;
     return (
       <div>
-        <button onClick={onDogPhoto}>Show Dog</button>
+        <button onClick={onDogClick}>Show Dog</button>
         {this.props.loading
           ? <p>Loading...</p>
           : this.props.error
@@ -29,7 +37,7 @@ class Dog extends Component {
 }
 
 Dog.propTypes = {
-  onDogPhoto: PropTypes.func
+  onDogClick: PropTypes.func
 };
 
 export default Dog;

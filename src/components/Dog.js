@@ -1,43 +1,21 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import fetchDog from '../actions'
 
-// Component
 
 class Dog extends Component {
-  constructor({dogy}) {
-    super();
-    this.state = {
-      dogy,
-      data: null
-    };
-    console.log('constructor');
-  }
-  componentWillMount() {
-    fetch('https://dog.ceo/api/breeds/image/random')
-      .then(data => {
-        return data.json();
-      }).then(dataDog => {
-        console.log(dataDog);
-        this.setState({dataDog});
-      });
-  }
-  render= () => {
-    const { onDogClick } = this.props;
+  render () {
     return (
       <div>
-        <button onClick={onDogClick}>Show Dog</button>
+        <button onClick={() => fetchDog(this.props.dispatch)}>Show Dog</button>
         {this.props.loading
           ? <p>Loading...</p>
           : this.props.error
             ? <p>Error, try again</p>
-            : <p><img src={this.props.url} alt=''/></p>}
+            : <p><img src={this.props.url}/></p>}
       </div>
     );
   }
 }
 
-Dog.propTypes = {
-  onDogClick: PropTypes.func
-};
 
-export default Dog;
+export default Dog ;

@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import {red500} from 'material-ui/styles/colors';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-
 import Header from './components/Header';
 import DogContainer from './containers/Container';
 import Submenu from './components/Submenu';
@@ -26,9 +24,8 @@ class App extends Component {
         <div className= 'App'>
           <Header/>
           <Submenu/>
-
           <DogContainer/>
-      </div>
+        </div>
       </MuiThemeProvider>
     );
   }

@@ -4,9 +4,9 @@ const SubMenu = () => (
 
   <div>
     <ul className='navbar'>
-      <li className='links'><i class="material-icons">history</i>Recientes</li>
-      <li className='links'><i class="material-icons">trending_up</i>Populares</li>
-      <li className='login'><i class="material-icons">favorite_border</i>Amados!</li>
+      <li className='links'><i className="material-icons">history</i>Recientes</li>
+      <li className='links'><i className="material-icons">trending_up</i>Populares</li>
+      <li className='login'><i className="material-icons">favorite_border</i>Amados!</li>
     </ul>
   </div>
 

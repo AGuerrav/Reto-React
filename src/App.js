@@ -26,9 +26,6 @@ class App extends Component {
           <Header/>
           <Submenu/>
           <DogContainer />
-
-        </div>
-        <div>
           <Footer/>
         </div>
       </MuiThemeProvider>

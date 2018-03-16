@@ -23,10 +23,7 @@ class Counter extends Component {
   render() {
     return (
       <div className="Counter">
-        <h2>{this.state.count}</h2>
-        <p>
-          <button id="add" onClick={this.handleCountClick}>Like</button>
-        </p>
+        <span><h2 className= 'like'>{this.state.count}</h2><button id="add" onClick={this.handleCountClick}><i class="material-icons">thumb_up</i></button></span>
       </div>
     );
   }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {callingDog, callingDogReady, callingDogFail } from '../actions/index';
 import Counter from './Counter';
+import logo from '../images/logo.png';
 // import fetchDog from '../actions'
 
 
@@ -29,21 +30,9 @@ class Dog extends Component {
                 <p><img src={this.props.url} alt=''/></p>
                 <Counter/>
               </div>
-              : <p></p>}
+              : <p><img src={logo} alt=''/></p>}
       </div>
     );
-  }
-  componentDidMount() {
-
-  }
-  componentwillUpdate() {
-
-  }
-  componentWillUnmount() {
-
-  }
-  componentWillMount() {
-
   }
 }
 

@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => (
 
   <footer>
-    <p>2018 RanDog Team Laboratoria, Santiago Chile - All Rights Reserved</p>  
+    <p>&copy; 2018 RanDog Team Laboratoria, Santiago Chile - All Rights Reserved</p>  
   </footer>
 
 );

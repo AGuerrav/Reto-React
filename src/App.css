@@ -2,10 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
 
 .App-header {
   background-color: #222;
@@ -21,8 +17,25 @@
 .App-intro {
   font-size: large;
 }
+.navbar {
+  font-family: 'Helvetica';
+  font-weight: 200;
+  letter-spacing: 0.7px;
+  background: #EEEEEE;
+  margin: 0;
+  padding: 0;
+}
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.links,
+.login {
+  display: inline-block;
+  padding: 2%;
+  color: #333333;
+  transition: all 0.3s;
+}
+
+.links:hover,
+.login:hover {
+  background: #F44336;
+  color: #FFFFFF;
 }

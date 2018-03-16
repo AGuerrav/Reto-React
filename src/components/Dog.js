@@ -3,6 +3,7 @@ import {callingDog, callingDogReady, callingDogFail } from '../actions/index';
 import Counter from './Counter';
 // import fetchDog from '../actions'
 
+
 class Dog extends Component {
   render = () => {
     // Llamado a la api y conexión con las actions
@@ -31,6 +32,18 @@ class Dog extends Component {
               : <p></p>}
       </div>
     );
+  }
+  componentDidMount(){
+
+  }
+  componentwillUpdate(){
+
+  }
+  componentWillUnmount(){
+
+  }
+  componentWillMount(){
+
   }
 }
 

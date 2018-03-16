@@ -9,6 +9,6 @@ const SubMenu = () => (
       <li className='login'><i class="material-icons">favorite_border</i>Amados!</li>
     </ul>
   </div>
-    
+
 );
 export default SubMenu;

@@ -19,7 +19,7 @@ class Dog extends Component {
     // console.log(this.props.url)
     return (
       <div>
-        <button onClick={() => fetchDog(this.props.dispatch)}>I'm feeling lucky</button>
+        <button onClick={() => fetchDog(this.props.dispatch)}>Descubrir!</button>
         {this.props.loading
           ? <p>Loading...</p>
           : this.props.error
@@ -33,16 +33,16 @@ class Dog extends Component {
       </div>
     );
   }
-  componentDidMount(){
+  componentDidMount() {
 
   }
-  componentwillUpdate(){
+  componentwillUpdate() {
 
   }
-  componentWillUnmount(){
+  componentWillUnmount() {
 
   }
-  componentWillMount(){
+  componentWillMount() {
 
   }
 }

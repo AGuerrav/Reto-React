@@ -1,35 +1,12 @@
 # RanDog
 
-RanDog es una página web en donde podrás encontrar diversas fotos de hermosos perritos con tan sólo hacer click!
-
-## Características:
-
-- [x] Página web desarrollada con React y Redux.
-- [x] Uso de la api https://dog.ceo/api/breeds/image/random.
-
-## Especificaciones técnicas
-
-El proyecto se realizó con las siguientes tecnologías:
-
-Herramientas de desarrollo:
-+ Control de versiones GIT
-+ npm v.5.6.0
-+ react v.16.2.0
-+ react-dom v.16.2.0
-+ react-redux v.5.0.7
-+ react-scripts v.1.1.1
-+ redux v.3.7.2
-
-Herramientas de producción:
-+ Material ui v.0.20.0
-
-Extra: Atom ESLint con la guía de estilos de Google para Laboratoria.
-
-## Demo
-
-https://aguerrav.github.io/Reto-React/
++ RanDog es una página web en donde podrás encontrar diversas fotos de hermosos perritos con tan sólo hacer click!
 
 
-## Wireframe
+![image](https://scontent.fscl4-1.fna.fbcdn.net/v/t1.0-9/29512975_10215708930373114_6646188035564452664_n.jpg?_nc_cat=0&oh=d6f030f0ae2b3d6e29d57c4f1962e759&oe=5B3213AB)
 
-![wireframe](/src/images/wireframe.png)
+
+## Desarrollado
+
+Para Laboratoria
+
